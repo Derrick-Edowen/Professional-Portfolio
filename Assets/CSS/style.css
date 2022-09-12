@@ -1,11 +1,9 @@
 body {
-    background-color:rgb(184, 213, 241);
+    background-color:rgb(230, 237, 243);
 }
 .header {
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: blue;
-    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .header nav {
 padding-top: 2px;
@@ -14,93 +12,157 @@ float: right;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px;
 }
-a {
-    color: antiquewhite;
+.header a {
     padding-inline-end: 30px;
     font-size: 25px;
-
+    color: rgb(9, 102, 241);
+    text-decoration: dotted;
+}
+.header h1 {
+font-size: 65px;
+color: rgb(9, 102, 241);
+}
+h2 {
+font-size: 50px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: grey;
 }
 p {
-    font-size: 20px;
-    color: red;
+    font-size: 30px;
 }
-.contact {
-    color: antiquewhite;
-    padding-inline-end: 30px;
-    font-size: 25px;
+.subheads1 {
+ border-right: 3px solid rgb(9, 102, 241);
+ border-width: 6px;
+ height: 400px;
+ width: 20%;
+ margin-left: 90px;
+ padding-inline-end: 30px;
 }
-.subheads {
- border-right: 3px solid black;
- border-width: 10px;
+.subheads2 {
+border-right: 3px solid rgb(9, 102, 241);
+border-width: 6px;
+height: 730px;
+width: 20%;
+margin-left: 90px;
+padding-inline-end: 30px;
 }
-.subheads h3 {
-font-size: 30px;
-font-family: Arial, Helvetica, sans-serif;
-position: relative;
+.subheads3 {
+border-right: 3px solid rgb(9, 102, 241);
+border-width: 6px;
+height: 500px;
+width: 20%;
+margin-left: 90px;
+padding-inline-end: 30px;
+}
+h3 {
+text-align: right;
+padding-top: 10px;
+font-size: 70px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: rgb(9, 102, 241);
+}
 
-}
-.sideTitle {
-    margin-left: 20px;
-    height: 100%;
-    clear:both;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
-    width: 2000px;
-}
-.sideTitle p {
-    color:blueviolet;
-    margin-top: 80px;
-    padding-left: 50px;
-
-}
 .code {
-    background-image: url(../Images/Program-Code-Feature-Image.jpg);
-    height: 250px;
+    background-image: url(../Images/splash.jpg);
+    height: 350px;
     width: 100%;
     margin-bottom: 25px;
     background-size:cover;
     background-position: center;
 }
 .worth {
-    margin-bottom: 150px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: rgb(9, 102, 241);
     color: #ffffff;
-    border-color: black;
+    border-radius: 25px;
 }
-.links {
-    margin: 0px;
-    padding: 0px;
-    height: 300px;
+
+.mywork {
+display: flex;
+width: 100%;
+margin-bottom: 190px;
+margin-top: 165px;
 }
-.worthb {
-    margin-bottom: 150px;
-    padding: 50px;
-    height: 500px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(../Images/Program-Code-Feature-Image.jpg);
-    width: 50%;
+.mywork a {
+text-align: center;
+text-decoration: dotted;
+font-size: 30px;
+color: aliceblue;
+background-color: grey;
 }
+.prework {
+flex: 1;
+background-image: url(../Images/Program-Code-Feature-Image.jpg);
+background-size: 600px 450px;
+background-position: 0px 45px;
+background-repeat: no-repeat;
+border: 10px solid gray;
+margin: 10px;
+width: 350px;
+height: 450px;
+margin: 25px;
+border-radius: 25px;
+transition: .5s ease;
+}
+.prework:hover {
+transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+}
+.refactor {
+flex: 1;
+background-image: url(../Images/refactor.jpg);
+background-size: 600px 400px;
+background-position: 0px 45px;
+background-repeat: no-repeat;
+border: 10px solid grey;
+margin: 10px;
+width: 350px;
+height: 450px;
+margin: 25px;
+border-radius: 25px;
+transition: .5s ease;
+} 
+.refactor:hover {
+ transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+}
+
+
 .main {
 width: 65%;
 display: inline-block;
 margin-left: 0px;
 margin-bottom: 30px;
 float: right;
+
+
 }
-/*.box {
-background-image: url(../Images/pexels-photo-965345.jpeg), url(../Images/refactor.jpg)
-background-size: cover;
-padding: 0px;
-margin: 2px;
-border: 0px;
+
+@media screen  and (max-width: 992px) {
+.prework {
+    width:50%;
+}
+.refactor {
 width: 50%;
-background-position: center right;
 }
-
-
-@media screen {
-    
+section {
+width: 50%;
+}  
+}
+@media  screen and (max-width: 768px) {
+.prework {
+width: 100%;
+}
+.refactor {
+width: 100%;
+}
+section {
+width: 100%;
+}
 }
